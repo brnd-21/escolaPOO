@@ -2,7 +2,7 @@ package controller;
 
 import dao.DisciplinaDAO;
 import modelo.Disciplina;
-import visao.PainelCadastroDisciplinas;
+import paineis.PainelCadastroDisciplinas;
 
 public class CadastrarDisciplina {
 	
@@ -14,7 +14,5 @@ public class CadastrarDisciplina {
 		
 		disdao = new DisciplinaDAO();
 		disdao.insere(disciplina);
-		
-		System.out.println("Valor salvo no banco, reinicie para ver as novidades");
 	}
 }

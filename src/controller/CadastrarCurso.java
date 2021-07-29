@@ -2,7 +2,7 @@ package controller;
 
 import dao.CursoDAO;
 import modelo.Curso;
-import visao.PainelCadastroCursos;
+import paineis.PainelCadastroCursos;
 
 public class CadastrarCurso {
 	
@@ -13,7 +13,5 @@ public class CadastrarCurso {
 		
 		curdao = new CursoDAO();
 		curdao.insere(curso);
-		
-		System.out.println(frame.getNome().getText());
 	}
 }

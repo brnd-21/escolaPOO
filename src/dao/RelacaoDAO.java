@@ -114,7 +114,7 @@ public class RelacaoDAO {
 		ResultSet rs = null;
 		
 		try {
-			stmt = conexao.getConn().prepareStatement("select id_user1, count(id_user1) as 'Relacoes' from relacoes group by id_user1");
+			stmt = conexao.getConn().prepareStatement("select id_user1, count(id_user1) as 'relacoes' from relacoes group by id_user1");
 			rs = stmt.executeQuery();
 			
 		} catch (SQLException e) {
